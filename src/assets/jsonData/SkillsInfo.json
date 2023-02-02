@@ -1,0 +1,34 @@
+[
+    {
+        "skill": "html5",
+        "img": "/images/skills/html5.svg"
+    },
+    {
+        "skill": "css3",
+        "img": "/images/skills/css3.svg"
+    },
+    {
+        "skill": "javascript",
+        "img": "/images/skills/js.svg"
+    },
+    {
+        "skill": "react",
+        "img": "/images/skills/reactjs.svg"
+    },
+    {
+        "skill": "git",
+        "img": "/images/skills/git.svg"
+    },
+    {
+        "skill": "redux",
+        "img": "/images/skills/redux.svg"
+    },
+    {
+        "skill": "sass",
+        "img": "/images/skills/sass.svg"
+    },
+    {
+        "skill": "bootstrap",
+        "img": "/images/skills/bootstrap.svg"
+    }
+]

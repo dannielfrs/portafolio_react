@@ -1,0 +1,89 @@
+@import "../../styles/mixins/mixins.scss";
+
+$font-title: var(--font-headline-5);
+$font-content: var(--font-body-2);
+$color-title: var(--color-dark-title);
+$color-content: var(--color-dark-main);
+$color-bg: rgb(0,0,0);
+
+.cardSlided {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    &:hover &_content {
+        transform: scaleY(1);
+    }
+
+    &_content {
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        height: 50%;
+        background-color: $color-bg;
+        opacity: 0.7;
+        padding: 10px;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: all 0.5s ease;
+
+        h3 {
+            font: $font-title;
+            font-weight: bold;
+            color: $color-title;
+        }
+
+        p {
+            font: $font-content;
+            color: $color-content;
+            margin-top: 10px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    >img {
+        width: 320px;
+        height: 260px;
+    }
+}
+
+/* LARGE SCREEN */
+
+@include large-screen(){}
+
+/* MEDIUM SCREEN */
+
+@include medium-screen(){
+    .cardSlided {
+        margin: 10px;
+    }
+}
+
+/* SMALL SCREEN */
+
+@include small-screen(){
+    // .cardSlided {
+    //     >img {
+    //         width: 220px;
+    //         height: 160px;
+    //     }
+    // }
+}
+
+/* EXTRA SMALL SCREEN */
+
+@include extra-small-screen(){}
