@@ -2,13 +2,13 @@
     {
         "name": "QueCalor.com",
         "description": "Sitio web para consultar el estado del tiempo de tu ciudad.",
-        "img": "/images/projects/quecalor.png",
-        "url": "https://www.google.com.mx"
+        "img": "/portafolio/images/projects/quecalor.png",
+        "url": "https://dannielfrs.github.io/quecalor"
     },
     {
         "name": "EsCine.com",
         "description": "Sitio web para guardar la información de tus peliculas favoritas.",
-        "img": "/images/projects/escine.png",
-        "url": "https://www.google.com.mx"
+        "img": "/portafolio/images/projects/escine.png",
+        "url": "https://escine-production.up.railway.app"
     }
 ]

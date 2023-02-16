@@ -1,6 +1,6 @@
 import styles from './footer.module.scss'
 import { BsPhone, BsEnvelope } from "react-icons/bs";
-import { FaFacebookSquare, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -21,9 +21,8 @@ const Footer = () => {
                     <span className={styles.menu_title}>links</span>
                     <div className={styles.social} >
                         <a href="https://www.facebook.com/daniel.frias.9674/" target="_blank" className={styles.social_link}><FaFacebookSquare /></a>
-                        <a href="https://www.google.com.mx" target="_blank" className={styles.social_link}><FaGithub /></a>
+                        <a href="https://github.com/dannielfrs" target="_blank" className={styles.social_link}><FaGithub /></a>
                         <a href="https://www.linkedin.com/in/daniel-frias-339492bb/" target="_blank" className={styles.social_link}><FaLinkedin /></a>
-                        <a href="https://www.google.com.mx" target="_blank" className={styles.social_link}><FaWhatsapp /></a>
                     </div>
                 </div>
             </div>

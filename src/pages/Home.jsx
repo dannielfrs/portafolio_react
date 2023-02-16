@@ -36,7 +36,7 @@ const Home = () => {
                         <div className='download_section'>
                             <hr />
                             <h1>Download resume</h1>
-                            <a href='/doc/curriculum.pdf' target="_blank"> <FaFilePdf /> </a>
+                            <a href='/portafolio/doc/curriculum.pdf' target="_blank"> <FaFilePdf /> </a>
                             <hr />
                         </div>
                     </div>

@@ -20,7 +20,7 @@ const NavbarScrollspy = (props) => {
     const callbackFunction = entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const sectionId = '/#' + entry.target.id;
+                const sectionId = '/portafolio/#' + entry.target.id;
                 links.current.forEach(link => {
                     link.classList.remove(styles.active);
                     const linkHref = link.attributes.href.nodeValue;
@@ -86,7 +86,7 @@ const NavbarScrollspy = (props) => {
                     <ul className={visible ? `${styles.navbar_menu} ${styles.active}` : styles.navbar_menu} id='links'>
                         <li className={styles.navbar_item} >
                             <Link
-                                to="/#home"
+                                to="/portafolio/#home"
                                 className={styles.navbar_button}
                                 ref={element => links.current[0] = element}
                                 onClick={hideMenu}>
@@ -95,7 +95,7 @@ const NavbarScrollspy = (props) => {
                         </li>
                         <li className={styles.navbar_item} >
                             <Link
-                                to='/#about'
+                                to='/portafolio/#about'
                                 className={styles.navbar_button}
                                 ref={element => links.current[1] = element}
                                 onClick={hideMenu}>
@@ -104,7 +104,7 @@ const NavbarScrollspy = (props) => {
                         </li>
                         <li className={styles.navbar_item} >
                             <Link
-                                to='/#skills'
+                                to='/portafolio/#skills'
                                 className={styles.navbar_button}
                                 ref={element => links.current[2] = element}
                                 onClick={hideMenu}>
@@ -113,7 +113,7 @@ const NavbarScrollspy = (props) => {
                         </li>
                         <li className={styles.navbar_item} >
                             <Link
-                                to='/#projects'
+                                to='/portafolio/#projects'
                                 className={styles.navbar_button}
                                 ref={element => links.current[3] = element}
                                 onClick={hideMenu}>
@@ -122,7 +122,7 @@ const NavbarScrollspy = (props) => {
                         </li>
                         <li className={styles.navbar_item}>
                             <Link
-                                to='/contact'
+                                to='/portafolio/contact'
                                 className={styles.navbar_button}
                                 ref={element => links.current[4] = element}
                                 onClick={hideMenu}>
