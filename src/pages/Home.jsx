@@ -17,7 +17,6 @@ const Home = () => {
     return (
         <main>
             <header className='page_header' id='home' ref={element => sections.current[0] = element}>
-
                 <NavbarScrollspy refSections={sections} />
                 <div data-aos="fade-up">
                     <Credential />

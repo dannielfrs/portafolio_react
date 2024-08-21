@@ -7,14 +7,12 @@ const ContactForm = () => {
     return (
         <>
             <Formik
-
                 initialValues={{
                     name: '',
                     company: '',
                     email: '',
                     message: ''
                 }}
-
                 validate={(values) => {
                     let errors = {};
                     // Validate name
@@ -37,9 +35,7 @@ const ContactForm = () => {
                     }
                     return errors;
                 }}
-
                 onSubmit={async (values, { resetForm }) => {
-                    console.log(values)
                     resetForm();
                     await fetch("https://formsubmit.co/ajax/dannielfrs@gmail.com", {
                         method: "POST",
@@ -57,10 +53,8 @@ const ContactForm = () => {
                         .then(response => response.json())
                         .then(data => console.log(data))
                         .catch(error => console.log(error))
-
-                    console.log('Formulario enviado');
-                    setSubmittedForm(true);
-                    setTimeout(() => setSubmittedForm(false), 5000);
+                    setSubmittedForm(true)
+                    setTimeout(() => setSubmittedForm(false), 5000)
                 }}
             >
                 {({ errors }) => (
@@ -104,7 +98,7 @@ const ContactForm = () => {
                 )}
             </Formik>
         </>
-    );
+    )
 }
 
-export default ContactForm;
+export default ContactForm
